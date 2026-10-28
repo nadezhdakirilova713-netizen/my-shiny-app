@@ -1,0 +1,11 @@
+library(mtcars)
+
+x = factor(mtcars$cyl)
+y = mtcars$mpg
+if (is.character(x) | is.factor(x)) {
+  boxplot(y~x)
+} else {
+    plot(y~x)
+  }
+ 
+ 
